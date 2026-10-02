@@ -7,6 +7,12 @@
         Имя пользователя:
         <strong>{{ user.username }}</strong>
     </p>
+    {% if is_methodist %}
+        <span class="badge text-bg-success">
+            Методист
+        </span>
+    {% endif %}
+
     <p>
         Статус:
         {% if user.is_superuser %}
